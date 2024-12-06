@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header-table {
+            border-spacing: 0;
+            border: 0px solid rgb(246, 245, 245);
+            font-size: 14.5px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: white;
+            z-index: 1000;
+        }
+        .header-table img {
+            height: 100px;
+        }
+        .header-table td {
+            vertical-align: top;
+        }
+        .header-table .center-text {
+            text-align: center;
+            font-weight: bold;
+        }
+        .header-table .right-text {
+            text-align: right;
+        }
+        .header-table .right-text p {
+            margin: 0;
+        }
+        .content {
+            margin-top: 80px; 
+        }
+        @media print {
+            .header-table {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-color: white;
+                z-index: 1000;
+            }
+            .content {
+                margin-top: 80px;
+            }
+        }
+        .table1 {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        .table2{
+            border: 0px solid rgb(246, 245, 245);
+            font-size: 12px;
+            width: 100%;
+            background-color: white;
+        }
+        .table4{
+            border: 0px solid rgb(246, 245, 245);
+            font-size: 10px;
+            width: 100%;
+            background-color: white;
+            margin-left: 50px;
+        }
+        .header-text {
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .tabla3-container {
+            height: 100%;
+            width: 100%;
+        }
+        .tabla3 {
+            border-collapse: collapse;
+            width: 80%;
+        }
+        .tabla3 th, .tabla3 td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+         .tabla3-container {
+        float: left;
+        margin-left: 50px; 
+    }
+    .pagina-salto {
+                page-break-before: always;
+            }
+            .security-box {
+    background-color: #fff;
+    border-left: 5px solid #007bff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }        
+  .Botosi {
+        width: 15%;
+        height: 20px; 
+        border: 0.5px solid black;
+        text-align: center;
+        background-color: #bdbaba;
+        font-size: 10px;
+        margin-right: 10px; 
+    }
+    .Botosi td {
+        height: 100%; 
+        vertical-align: middle;
+    }
+    .tabla-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .firma-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 10px;
+            font-size: 10px;
+        }
+        .firma-block {
+            text-align: left;
+            width: 40%;
+            border-top: 1px solid #000;
+        }
+        .firma-name {
+            font-weight: bold;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            border-top: 1px solid black;
+            padding: 10px 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <table class="header-table">
+        <tr>
+            <td><img src="https://insumos-bot-asistencia-tecnica.s3.us-west-2.amazonaws.com/Biblioteca+Publica+Piloto+BPP/WhatsApp+Image+2024-07-05+at+8.59.18+AM.jpeg" alt="" width="200" height="45" />
+            </td>
+            <td>
+                <p class="center-text">INFORME DE SUPERVISIÓN<br>AÑO 2024</p>
+            </td>
+            <td class="right-text">
+                <p>F-GJC-04</p>
+                <p>Version 03</p>
+                <br>
+                <p>Fecha: 19-Ene-2024</p>
+            </td>
+        </tr>
+</table>
+<div class="content"> 
+        <br><br>
+        <table style="border: solid black; font-size:14.5px; width:100%">
+            <tbody>
+                <tr>
+                    <td rowspan="2">&nbsp;
+                    <div style="text-align:center"><span style="font-size:10px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>CONTRATO N° <span class="h-card" style="color:blue">{{object.entityInfo_67372}}</span> DE 2024 ENTRE LA BIBLIOTECA PUBLICA PILOTO DE MEDELLÍN PARA AMÉRICA LATINA Y  <br><span class="h-card" style="color:blue">{{object.entityInfo_67568}}</span>CON C.C <span class="h-card" style="color:blue">{{object.entityInfo_67569}}</span></strong> </span> </span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="table1">
+                <tr>
+                    <th class="header-text">SEGUIMIENTO ADMINISTRATIVO</th>
+                </tr>
+        </table>
+        <br>
+        <table class="table2" style="font-family:Arial,Helvetica,sans-serif">
+                <tr>
+                    <td>Fecha del informe</td>
+                    <td><span class="h-card" style="color:blue">{{object.qID4775_69150}}</span></td>
+                </tr>
+                <tr>
+                    <td>Tipo de informe</td>
+                    <td><span class="h-card" style="color:blue">{{object.qID4775_69151}}</span></td>
+                </tr>
+                <tr>
+                    <td>Tipo de nombramiento</td>
+                    <td>Prestación de servicios</td>
+                </tr>
+                <tr>
+                    <td>Lugar de ejecución</td>
+                    <td>Distrito Especial de Ciencia, Tecnología e Innovación de Medellín</td>
+                </tr>
+                <tr>
+                    <td>Supervisor(a)</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_67387}}</span></td>
+                </tr>
+                <tr>
+                    <td>Cédula supervisor(a)</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_117764}}</span></td>
+                </tr>
+                <tr>
+                    <td>Fecha suscripción del acto</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_67373}}</span></td>
+                </tr>
+                <tr>
+                    <td>Ampliación de plazo según otrosí</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_67373}}</span></td>
+                </tr>
+                <tr>
+                    <td>Fecha final del contrato</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_117765}}</span></td>
+                </tr>
+            </table>
+            <br>
+            <div class="tabla3-container">
+                <table class="tabla3">
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Valor Inicial del contrato:</th>
+                        <th>( + ) Otrosí N° 1</th>
+                        <th>( + ) Otrosí N° 2</th>
+                        <th>( - ) Liberaciones</th>
+                        <th>Valor actual del contrato</th>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.entityInfo_67385}}</span></td>
+                        <td>$ <span class="h-card" style="color:blue">{{object.entityInfo_67380}}</span></td>
+                        <td>$ <span class="h-card" style="color:blue">{{object.entityInfo_67382}}</span></td>
+                        <td>$ <span class="h-card" style="color:blue">{{object.entityInfo_117934}}</span></td>
+                        <td>$ <span class="h-card" style="color:blue">{{object.entityInfo_67381}}</span></td>
+                        <td>$ <span class="h-card" style="color:blue">{{object.entityInfo_67383}}</span></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </div>
+        <br>
+        <table class="table1">
+                <tr>
+                    <th class="header-text">NOVEDADES DEL MES</th>
+                </tr>
+        </table>
+        <br>
+        <table class="table2">
+                <tr>
+                    <td>Fecha de suspensión:</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_117766}}</span>, <span class="h-card" style="color:blue">{{object.entityInfo_117769}}</span></td>
+                </tr>
+                <tr>
+                    <td>Fecha de reinicio:</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_117767}}</span>, <span class="h-card" style="color:blue">{{object.entityInfo_117770}}</span></td>
+                </tr>
+                <tr>
+                    <td>Fecha terminación anticipada</td>
+                    <td><span class="h-card" style="color:blue">{{object.entityInfo_117768}}</span>, <span class="h-card" style="color:blue">{{object.entityInfo_117771}}</span></td>
+                </tr>
+        </table>
+            <br>
+            <table class="table1">
+                <tr>
+                    <th class="header-text">OBJETO DEL CONTRATO:</th>
+                </tr>
+            </table>
+            <br>
+            <table class="table1">
+                <tr style="font-size: 12px; text-align: left;">
+                    <td>
+                        <span class="h-card" style="color:blue">{{object.entityInfo_67379}}</span>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table class="table1">
+                <tr>
+                    <th class="header-text">SEGUIMIENTO FINANCIERO</th>
+                </tr>
+            </table>
+        <table class="table2" style="width: 50%;">
+            <tr>
+                <td>Estado actual:</td>
+                <th><span class="h-card" style="color:blue">{{object.entityInfo_67384}}</span></th>
+            </tr>
+            <tr>
+                <td>Cumplimiento objeto contractual</td>
+                <th><span class="h-card" style="color:blue">{{object.qID4775_69174}}</span>%</th>
+            </tr>
+            <tr>
+                <td>Ejecución presupuestal:</td>
+                <th> </th>
+            </tr>
+        </table>
+            <br>
+            <div class="pagina-salto" style="margin-top: 150px;" >
+                <table class="tabla3 " style="font-size: 10px;">
+                    <tr>
+                        <th>Valor actual del <br>
+                            contrato</th>
+                        <th>Proyecto</th>
+                        <th>%
+                            Ejecución</th>
+                        <th>Mes</th>
+                        <th>Valor a Pagar</th>
+                        <th>Saldo
+                            Contrato</th>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69152}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.entityInfo_67385}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69157}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69176}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69155}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69156}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69152}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_67385}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69160}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69177}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69158}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69159}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69152}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.entityInfo_67385}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69163}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69178}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69161}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69162}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69152}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.entityInfo_67385}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69166}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69179}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69164}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69165}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69152}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.entityInfo_67385}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69169}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69180}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69167}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69168}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69152}}</span></td>
+                        <td><span class="h-card" style="color:blue"{{object.entityInfo_67385}}></span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69172}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69181}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69170}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69171}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue"{{object.qID4775_69152}}></span></td>
+                        <td><span class="h-card" style="color:blue"{{object.entityInfo_67385}}></span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_85261}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_85262}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_85259}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_85260}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_69152}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.entityInfo_67385}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_86907}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_86908}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_86905}}</span></td>
+                        <td><span class="h-card" style="color:blue">{{object.qID4775_86906}}</span></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <table class="table2" style="width: 50%;">
+            <tr>
+                <td>Honorarios / Servicios:</td>
+                <td><span class="h-card" style="color:blue">{{object.qID4775_69153}}</span></td>
+            </tr>
+            <tr>
+                <td>Iva:</td>
+                <td>$ 0</td>
+            </tr>
+            <tr>
+                <th>Total a Pagar:</th>
+                <th> <span class="h-card" style="color:blue">{{object.qID4775_69153}}</span></th>
+            </tr>
+        </table>
+    
+    <br>
+    <table class="table1">
+        <tr>
+            <th class="header-text">SEGUIMIENTO TÉCNICO</th>
+        </tr>
+    </table>
+    <br>
+    <table class="table1">
+        <tr style="font-size: 9px; text-align: left;">
+            <td>
+                <p> <span class="h-card" style="color:blue">{{object.qID4775_69175}}</span> </p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div class="tabla-container">
+        <table class="Botosi">
+            <tr>
+                <td>SI</td>
+            </tr>
+        </table>
+        <p class="tabla3-container" style="font-size: 10px; text-align: center;">
+            Las afiliaciones, las planillas y/o pagos de seguridad social fueron verificados y corresponden con el valor a 
+            pagar de conformidad con lo establecido en el contrato.
+        </p>
+    </div>
+    <br><br><br><br>
+    <div class="pagina-salto">
+        <br><br><br><br><br><br><br><br><br><br>
+        <table class="table1">
+            <tr>
+                <th class="header-text">ANEXOS AL PRESENTE INFORME:</th>
+            </tr>
+        </table>
+    </div> <br>
+    <table class="table4" style="width: 100%;">
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Acta de inicio</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Soporte de pago seguridad social mes actual</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Acta de Suspension</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Soporte de pago seguridad social mes vencido</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Acta de reinicio</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Planilla seguridad social actual</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Acta de terminación ordinaria </td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Planilla seguridad social vencido</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span> </td>
+            <td>Acta de terminación ordinaria con saldo </td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span> </td>
+            <td>Certificado de afiliación EPS, AFP y ARL</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Acta de terminación anticipada </td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Declaración juramentada</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Contrato</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Evidencias fotograficas (con Marca de la fecha que fue tomada sin repetir)</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Cesión de Contrato</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Evidencias pantallazos PC (Marca de la fecha del escritorio)</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Otrosi N° 1</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Evidencias documentos (pdf. word. excel, otros)</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Otrosi N° 2</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Evidencias N° de la placa (Compra de Activos BPP)</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Paz y salvo</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Lista de asistencia (Firmados por asistentes)</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Factura Electrónica</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Beneficios Tributarios</td>
+        </tr>
+        <tr>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Documento Soporte</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+            <td>Otro:</td>
+        </tr>
+    </table>
+    <br>
+    <table class="table1" style="border: solid black; width: 30%;font-size: 10px; margin-left: 100px;">
+        <tr>
+            <td>Total Anexos:</td>
+            <td><span class="h-card" style="color:blue">{{object.qID9679_117415}}</span></td>
+        </tr>
+    </table>
+    <br> <br> <br> <br> <br> 
+<table class="footer">
+    <tr>
+            <td><img height="100px" alt="" src="https://insumos-bot-asistencia-tecnica.s3.us-west-2.amazonaws.com/Biblioteca+Publica+Piloto+BPP/Captura+de+pantalla+2024-06-07+154759.png"  /></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
